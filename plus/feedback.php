@@ -1,4 +1,4 @@
-
+header(“content-type:text/html;charset=utf-8”);
 <center>
 <script>
       var pgo=0;
