@@ -1,0 +1,719 @@
+/***
+ *	DedeCMS v5.3 Style (grass green)
+ *	dedecms.com  Author pigz  2008-11-07 11:49
+ **/
+ 
+/*---------- import ---------*/
+@import url("http://https://miku1hhhh.github.io/mikufans.github.io/templets/style/layout.css");
+@import url("http://https://miku1hhhh.github.io/mikufans.github.io/templets/style/page.css");
+
+
+/*---------- base ---------*/
+*{
+	padding:0px;
+	margin:0px;
+}
+html{
+	background:#FFFFFF;
+}
+body{
+	font:12px Verdana,Arial,Tahoma;
+}
+img{
+	border:none;
+}
+
+a{
+	color:#3366CC;
+	text-decoration:none;
+    blr:expression(this.onFocus=this.blur());   /*    IE Opera    */
+    outline:none;   /*    FF Opera    */
+}
+a:focus{ 
+    -moz-outline-style: none;   /*    FF    */
+}
+a:hover{
+	color:#F33;
+	text-decoration:underline;
+}
+ul{
+	list-style:none;
+}
+input,select,button{
+	font:12px Verdana,Arial,Tahoma;
+	vertical-align:middle;
+}
+/*---------- stock ---------*/
+.center{
+	margin:0px auto;
+}
+.w960{
+	width:960px;
+	position:relative;
+}
+.mt1{/* ( margin-top * 1 ) */
+	margin-top:3px;
+}
+.mt2{/* ( margin-top * 2 ) */
+	margin-top:12px;
+}
+.mster{
+margin-top:8px;
+width:720px;
+}
+.megl{
+margin-top:8px;
+width:200px;
+}
+.clear{
+	overflow:hidden;
+}
+.fs-12{
+	font-size:12px;
+}
+.fc-f60{
+	color:#F60;
+}
+.fc-f90{
+	color:#F90;
+}
+.ipt-txt{
+	line-height:15px;
+	padding:4px 5px;
+	border-width:1px;
+	border-style:solid;
+	border-color:#666 #BBB #BBB #666;
+	font-size:12px;
+	margin-right:2px;
+}
+.btn-1{
+	width:48px;
+	height:23px;
+	border:none;
+	background:url(/http://https://miku1hhhh.github.io/mikufans.github.io/templets/images/btn-bg1.gif) no-repeat;
+	line-height:25px;
+	letter-spacing:1px;
+	overflow:hidden;
+	color:#333;
+	font-weight:700;
+}
+.btn-2{
+	width:70px;
+	height:25px;
+	border:none;
+	background:url(/http://https://miku1hhhh.github.io/mikufans.github.io/templets/images/btn-bg2.gif) left top no-repeat;
+	line-height:25px;
+	overflow:hidden;
+	color:#444;
+	margin-right:2px;
+}
+/*---------- frame ---------*/
+/*---------- frame : header ---------*/
+.hfd{
+	width:100%;
+	height:30px;
+	background:url(/http://https://miku1hhhh.github.io/mikufans.github.io/templets/images/hfd.gif) repeat-x;
+	clear:both;
+	overflow:hidden;
+}
+.hfd .usercenter .tbox dd{
+	height:370px;
+	display:none;
+}
+.hfd .usercenter .tbox dd#loading{
+	display:block;
+	text-align:center;
+	line-height:200px;
+	letter-spacing:2px;
+	color:#999999;
+}
+.hfd .userlogin{
+	display:inline;
+	width:630px;
+	float:right;
+	padding-top:2px;
+}
+.hfd .userlogin .fb{
+	display:inline;
+	padding-right:2px;
+	color:#888;
+	height:12px;
+}
+.hfd .userlogin .fb span{
+	display:inline;
+	padding-top:2px;
+	height:16px;
+}
+.hfd .userlogin .fb span .txtipt{
+	display:inline;
+}
+.hfd .userlogin .fb img{
+	display:inline;
+	vertical-align:middle;
+	margin-left:5px;
+}
+.hfd .userlogin .submit{
+	display:inline;
+	text-align:center;
+	padding-top:1px;
+}
+.hfd .userlogin .submit a{
+	display:inline;
+	color:#888;
+	margin-left:7px;
+}
+.hfd .userinfo{
+	padding-right:20px;
+	display:inline;
+	float:right;
+}
+.hfd .userinfo .userface{
+	display:inline;
+	width: 25px; height: 25px;
+}
+.hfd .userinfo .userface a{
+	display:inline;
+}
+.hfd .userinfo .userface a img{
+	display:inline;
+	width:23px;
+	height:23px;
+	border:1px solid #DDD;
+	padding-top:2px;
+	margin-bottom:-7px;
+}
+.hfd .userinfo .welcome{
+	display:inline;
+	color:#777;
+	height:25px;
+}
+.hfd .userinfo .welcome strong{
+	display:inline;
+	color:#F60;
+}
+.hfd .userinfo .mylink{
+	display:inline;
+	padding-top:-8px;
+}
+.hfd .userinfo .mylink span{
+	display:inline;
+	color:#787878;
+	padding-top:2px;
+}
+.hfd .userinfo .mylink span a{
+	display:inline;
+	color:#000;
+	padding-top:2px;
+}
+.hfd .latestlogin{
+	padding-top:12px;
+}
+.hfd .latestlogin strong{
+	width:102px;
+	padding-left:6px;
+	letter-spacing:1px;
+	color:#666;
+	display:block;
+	line-height:21px;
+	background:#FFF;
+	position:relative;
+	z-index:5;
+}
+.hfd .latestlogin ul{
+	width:224px;
+	border-top:1px solid #C5DDBC;
+	padding-top:20px;
+	z-index:3;
+	margin:-12px auto 0px;
+}
+
+.header{
+	width:100%;
+	overflow:hidden;
+}
+.header a{
+	color:#777;
+}
+.header a:hover{
+	color:#390;
+	text-decoration:none;
+} 
+.header .top{
+	clear:both;
+	overflow:hidden;
+}
+.header .title{
+	float:left;
+	margin-top:3px;
+}
+.header .title h1 a{
+	width:297px;
+	height:90px;
+	display:block;
+	font-size:0px;
+	text-indent:-200px;
+	overflow:hidden;
+	background:url(/http://https://miku1hhhh.github.io/mikufans.github.io/templets/images/top-logo.gif) no-repeat top left;
+}
+.header .top_gg{
+	float:right;
+	margin-top:5px;
+	width:650px;
+	height:87px;
+}
+
+.header .banner{
+	width:500px;
+	height:60px;
+	float:left;
+	margin-left:40px;
+	overflow:hidden;
+}
+.header .banner img{
+	width:500px;
+	height:60px;
+	display:block;
+}
+.header .rlink{
+	width:172px;
+	height:52px;
+	float:left;
+	margin-left:32px;
+	overflow:hidden;
+	padding-top:4px;
+}
+.header .rlink ul li{
+	width:78px;
+	height:21px;
+	background:url(/http://https://miku1hhhh.github.io/mikufans.github.io/templets/images/toprlink-bg.gif) left top no-repeat;
+	float:left;
+	margin-right:8px;
+	margin-bottom:8px;
+	overflow:hidden;
+}
+.header .rlink ul li a{
+	display:block;
+	color:#777;
+	line-height:21px;
+	text-indent:22px;
+	background-image:url(/http://https://miku1hhhh.github.io/mikufans.github.io/templets/images/toprlink-bg.gif);
+	background-repeat:no-repeat;
+}
+.header .rlink ul li a:hover{
+	color:#000;
+}
+.header .rlink ul li.r1 a{
+	background-position:0px -21px;
+}
+.header .rlink ul li.r2 a{
+	background-position:0px -42px;
+}
+.header .rlink ul li.r3 a{
+	background-position:0px -63px;
+}
+.header .rlink ul li.r4 a{
+	background-position:0px -84px;
+}
+.header .welcome{
+	float:right;
+	margin-top:20px;
+	padding-right:10px;
+	color:#999;
+}
+.header .welcome a{
+	margin:0px 3px;	
+}
+.header .gonggao{
+line-height:35px;
+float:left;
+margin-left:7px;
+background:url(/http://https://miku1hhhh.github.io/mikufans.github.io/header_ann_icon.png) 0px 10px no-repeat;
+}
+.header .nav{
+	width:100%;
+	height:32px;
+	background:url(/http://https://miku1hhhh.github.io/mikufans.github.io/templets/images/nav-bg.gif) repeat-x;
+	clear:both;
+	overflow:hidden;
+}
+.header .nav ul{
+	height:32px;
+	margin:0px auto;
+	overflow:hidden;
+}
+.header .nav ul li{
+	float:left;
+	line-height:31px;
+	margin-left:-2px;
+}
+.header .nav .papapa{
+float:right;
+line-height:31px;
+margin-right:7px;
+}
+.header .nav ul li a{
+	height:32px;
+	padding:3px 18px 0px 17px;
+	display:block;
+	color:#000;
+	float:left;
+}
+.header .nav ul li a:hover{
+	color:#8A0808;
+}
+.header .search{
+	height:40px;
+	background:url(/http://https://miku1hhhh.github.io/mikufans.github.io/templets/images/search-d.gif) repeat-x;
+	clear:both;
+}
+.header .search .form{
+	padding-left:8px;
+	padding-top:5px;
+	float:right;
+}
+.header .search .form h4{
+	display:none;
+}
+.header .search .form input.search-keyword{
+	width:156px;
+	height:18px;
+	border:none;
+	background:url(/http://https://miku1hhhh.github.io/mikufans.github.io/templets/images/search-bg.gif) left top no-repeat;
+	line-height:15px;
+	font-size:12px;
+	padding:5px 3px 0px 58px;
+	overflow:hidden;
+}
+.header .search .form select.search-option{
+	margin-left:2px;
+}
+.header .search .form button.search-submit{
+	width:68px;
+	height:22px;
+	border:none;
+	background:#F00 url(/http://https://miku1hhhh.github.io/mikufans.github.io/templets/images/search-bg.gif) right top no-repeat;
+	font-size:0px;
+	line-height:100px;
+	margin-left:2px;
+	*margin-left:5px;
+	overflow:hidden;
+}
+.header .tags{
+	float:left;
+	width:500px;
+	margin-right:12px;
+	padding-top:8px;
+}
+.header .tags h4{
+	width:66px;
+	height:19px;
+	float:left;
+	font-size:0px;
+	line-height:100px;
+	overflow:hidden;
+	background:url(/http://https://miku1hhhh.github.io/mikufans.github.io/templets/images/search-tags-title.gif) no-repeat;
+}
+.header .tags ul{
+	height:21px;
+	float:left;
+	overflow:hidden;
+}
+.header .tags ul li{
+	float:left;
+	line-height:19px;
+	padding:0px 5px;
+}
+
+
+.quote{
+	display: none;
+	width:500px;
+	height:117px;
+	background:url(/http://https://miku1hhhh.github.io/mikufans.github.io/templets/images/gif-gj.gif) repeat-x top left;
+	border:#CCCCCC solid 1px;
+	padding-left:30px;
+	padding-top:5px;
+}
+.quote .bbs{
+	margin:2px;
+	float:left;
+	width:470px;
+	padding:3px;
+}
+.quote .htm{
+	margin:2px;
+	float:left;
+	width:470px;
+	padding:3px;
+}
+.quote .clse{
+	margin-top:10px;
+	text-align:right;
+	width:470px;
+}
+.quote .info{
+	text-align:right;
+	font-size:14px;
+	color:#FF6666;
+	float:left;
+	width:450px;
+}
+
+.quote .label{
+	font-size:12px;
+	color:#FF6600;
+	font-weight:700;
+	float:left;
+	margin-top:2px;
+}
+.quote input{
+	border:1px solid #999999;
+	color:#222;
+	font-size:11px;
+	margin-top:1px;
+	margin-right:6px;
+	height:14px;
+	float:left;
+	width:240px;
+}
+.quote .copy{
+	float:left;
+	background:url(/http://https://miku1hhhh.github.io/mikufans.github.io/templets/images/butfz.gif) no-repeat left top;
+	height:21px;
+	width:43px;
+	margin-top:-2px;
+	padding-left:7px;
+	padding-top:4px;
+}
+.quote a{
+	color:#0066CC;
+	font-size:12px;
+	font-weight:700;
+	text-decoration:none;
+}
+.quote a:hover{
+	color:#FF3300;
+	text-decoration:underline;
+}
+
+/*---------- frame : channel-nav ---------*/
+.channel-nav{
+	height:31px;
+	border-bottom:1px solid #E5EFD6;
+}
+.channel-nav ul{
+	height:22px;
+	padding-left:10px;
+	padding-top:3px;
+	overflow:hidden;
+	float:left;
+}
+.channel-nav ul li{
+	height:22px;
+	float:left;
+	overflow:hidden;
+	margin-right:10px;
+}
+.channel-nav ul li a{
+	height:22px;
+	display:block;
+	padding-right:10px;
+	float:left;
+	background:url(/http://https://miku1hhhh.github.io/mikufans.github.io/templets/images/channel-nav-bg.gif) right 0px no-repeat;
+	overflow:hidden;
+}
+.channel-nav ul li a span{
+	display:block;
+	float:left;
+	height:22px;
+	padding-left:10px;
+	background:url(/http://https://miku1hhhh.github.io/mikufans.github.io/templets/images/channel-nav-bg.gif) left 0px no-repeat;
+	cursor:pointer;
+	overflow:hidden;
+	line-height:23px;
+	color:#666666;
+}
+.channel-nav ul li a:hover{
+	text-decoration:none;
+	background:url(/http://https://miku1hhhh.github.io/mikufans.github.io/templets/images/channel-nav-bg.gif) right -22px no-repeat;
+}
+.channel-nav ul li a:hover span{
+	color:#78A63C;
+	text-decoration:none;
+	background:url(/http://https://miku1hhhh.github.io/mikufans.github.io/templets/images/channel-nav-bg.gif) left -22px no-repeat;
+}
+.channel-nav ul li.thisclass{
+}
+.channel-nav ul li.thisclass a,.channel-nav ul li.thisclass a:hover{
+	background:url(/http://https://miku1hhhh.github.io/mikufans.github.io/templets/images/channel-nav-bg.gif) right -44px no-repeat;
+	cursor:default;
+}
+.channel-nav ul li.thisclass a span,.channel-nav ul li.thisclass a:hover span{
+	background:url(/http://https://miku1hhhh.github.io/mikufans.github.io/templets/images/channel-nav-bg.gif) left -44px no-repeat;
+	color:#FFF;
+	cursor:default;
+}
+.channel-nav .back{
+	display:block;
+	height:22px;
+	line-height:21px;
+	padding-top:6px;
+	padding-right:10px;
+	padding-left:20px;
+	letter-spacing:2px;
+	float:right;
+	background:url(/http://https://miku1hhhh.github.io/mikufans.github.io/templets/images/ico-home.gif) 4px 10px no-repeat;
+} 
+.channel-nav .back a{
+	color:#94B56A;
+}
+.channel-nav .back a:hover{
+	text-decoration:none;
+	color:#777;
+}
+/*----------flink---------*/
+.friend_link {
+	overflow:hidden;CLEAR: both; BORDER-RIGHT: #dedede 1px solid; BORDER-TOP: #dedede 1px solid; float: right; BORDER-LEFT: #dedede 1px solid;	margin-bottom:-3px; margin-right:7px;Width:900px;
+}
+.friend_link .border {
+	BORDER-BOTTOM: #7d7d7d 1px dotted;
+}
+.friend_link .tit {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; WIDTH: 90px; LINE-HEIGHT: 36px; TEXT-ALIGN: center;float: left;
+}
+.friend_link UL {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 5px; WIDTH: 750px; PADDING-TOP: 5px; TEXT-ALIGN: center; LIST-STYLE-TYPE: none;
+}
+.friend_link LI {
+	FLOAT: left; LINE-HEIGHT: 26px; MARGIN-RIGHT: 20px; WHITE-SPACE: nowrap; TEXT-ALIGN: left; LIST-STYLE-TYPE: none;
+}
+.friend_link .f_link{
+float: left;
+}
+.friend_link LI A:link {
+	COLOR: #333333; TEXT-DECORATION: none
+}
+.friend_link LI A:visited {
+	COLOR: #333333; TEXT-DECORATION: none
+}
+.friend_link LI A:hover {
+	COLOR: #a92400; TEXT-DECORATION: none
+}
+.friend_link .m_link A:link {
+	COLOR: #999999
+}
+.friend_link .m_link A:visited {
+	COLOR: #999999
+}
+.friend_link .m_link A:hover {
+	COLOR: #a92400
+}
+
+
+/*---------- frame : footer ---------*/
+.footer{
+	color:#999;
+	border-top:1px solid #D8D8D8;
+	height:105px;
+	width:100%;
+	text-align:center;
+	margin:0px auto;
+}
+.footer .link{
+	padding-top:16px;
+}
+.footer .link a{
+	color:#666666;
+}
+.footer .powered{
+	font-size:12px;
+	line-height:25px;
+}
+.footer .powered strong{
+	color:#690;
+}
+.footer .powered strong span{
+	color:#F93;
+}
+.footer .copyright{
+	color:#999;
+	font-size:12px;
+	line-height:23px;
+}
+
+
+/* 这是公告框 */
+html, body {
+ height: 100%;
+ width: 100%;
+ font-size:12px
+}
+.white_content {
+ display: none;
+ position: absolute;
+ top: 25%;
+ left: 25%;
+ width: 40%;
+ padding: 6px 16px;
+ border: 4px solid #99CCFF;
+ background-color:#EFF5FB;
+ z-index:1002;
+ overflow: auto;
+}
+.black_overlay {
+ display: none;
+ position: absolute;
+ top: 0%;
+ left: 0%;
+ width: 100%;
+ height: 100%;
+ background-color:#f5f5f5;
+ z-index:1001;
+ -moz-opacity: 0.8;
+ opacity:.80;
+ filter: alpha(opacity=80);
+}
+.close {
+ float:right;
+ clear:both;
+ width:100%;
+ text-align:right
+}
+.close a {
+ color:#333;
+ text-decoration:none;
+ font-size:14px;
+ font-weight:700
+}
+.con {
+ MARGIN: 10px 0px;
+ text-indent:1.5pc;
+ COLOR: #585858;
+ line-height:21px
+}
+.popup_title {
+	FONT: bold 14px Arial; COLOR: #0060c3
+}
+
+.cPopText {  background-color: #F5F5F5; border: 1px #C5C5C5 solid; font-size: 16px; font-family: Tahoma;padding-right: 2px; padding-left: 2px; height: 20px; padding-top: 2px; padding-bottom: 2px; filter: Alpha(Opacity=0)}
+/*
+     FILE ARCHIVED ON 13:43:18 Oct 05, 2010 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 02:53:01 Nov 25, 2022.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 266.41
+  exclusion.robots: 0.181
+  exclusion.robots.policy: 0.174
+  cdx.remote: 0.064
+  esindex: 0.011
+  LoadShardBlock: 175.233 (3)
+  PetaboxLoader3.datanode: 187.789 (4)
+  CDXLines.iter: 16.919 (3)
+  load_resource: 87.953
+  PetaboxLoader3.resolve: 48.276
+*/
