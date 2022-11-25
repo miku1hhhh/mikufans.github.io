@@ -1,4 +1,5 @@
-header(“content-type:text/html;charset=utf-8”);
+<html>
+<title>MiKufans提示信息</title>
 <center>
 <script>
       var pgo=0;
