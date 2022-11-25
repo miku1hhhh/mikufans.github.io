@@ -1,0 +1,345 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312"/>
+<title>Hello Acfun_Mikufans</title>
+<meta name="keywords" content="绿BAR，电锯惊魂，Acfun"/>
+<meta name="description" content="Hello Acfun i want to play a game 自己制作的第一个视频，高手勿笑（内有福利。。嘘）"/>
+<link href="http://miku1hhhh.github.io/mikufans.github.io//templets/style/dedecms.css" rel="stylesheet" media="screen" type="text/css"/>
+<script language="javascript" type="text/javascript" src="http://miku1hhhh.github.io/mikufans.github.io//include/dedeajax2.js"></script>
+<script language="javascript" type="text/javascript">
+<!--
+	function CheckLogin(){
+	  var taget_obj = document.getElementById('_ajax_feedback');
+	  myajax = new DedeAjax(taget_obj,false,false,'','','');
+	  myajax.SendGet2("/member/ajax_feedback.php");
+	  DedeXHTTP = null;
+	}
+	function checkSubmit(){				<!-- / Ajax评论 -->
+		if(document.feedback.msg.value!='') ajax_comment();
+		else alert("评论内容不能为空！");
+	}
+ function postDigg(ftype,aid)
+ {
+	var taget_obj = document.getElementById('newdigg');
+	var saveid = GetCookie('diggid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==aid && hasid) continue;
+			else {
+				if(saveids[i]==aid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==20 && hasid) break;
+				if(j==19 && !hasid) break;
+			}
+		}
+		if(hasid) { alert("您已经顶过该帖，请不要重复顶帖 ！"); return; }
+		else saveid += ','+aid;
+		SetCookie('diggid',saveid,1);
+	}
+	else
+	{
+		SetCookie('diggid',aid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/plus/feedback.php?action="+ftype+"&aid="+aid+"&formarc=1");
+	DedeXHTTP = null;
+}
+	function postBadGood(ftype,fid)
+	{
+		var taget_obj = document.getElementById(ftype+fid);
+		var saveid = GetCookie('badgoodid');
+		if(saveid != null)
+		{
+			 var saveids = saveid.split(',');
+			 var hasid = false;
+			 saveid = '';
+			 j = 1;
+			 for(i=saveids.length-1;i>=0;i--)
+			 {
+			 	  if(saveids[i]==fid && hasid) continue;
+			 	  else {
+			 	  	if(saveids[i]==fid && !hasid) hasid = true;
+			 	  	saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+			 	  	j++;
+			 	  	if(j==10 && hasid) break;
+			 	  	if(j==9 && !hasid) break;
+			 	  }
+			 }
+	     if(hasid) { alert('您刚才已表决过了喔！'); return false;}
+	     else saveid += ','+fid;
+			 SetCookie('badgoodid',saveid,1);
+		}
+		else
+		{
+			SetCookie('badgoodid',fid,1);
+		}
+		//document.write("feedback.php?action="+ftype+"&fid="+fid);
+		//return;
+	  myajax = new DedeAjax(taget_obj,false,false,'','','');
+	  myajax.SendGet2("/plus/feedback.php?aid="+fid+"&action="+ftype+"&fid="+fid);
+	  DedeXHTTP = null;
+	}
+	function getDigg(aid)
+	{
+		var taget_obj = document.getElementById('newdigg');
+		myajax = new DedeAjax(taget_obj,false,false,'','','');
+		myajax.SendGet2("/plus/feedback.php?action=showDigg&aid="+aid);
+		DedeXHTTP = null;
+	}
+
+-->
+</script>
+
+</head>
+
+<div class="header">
+    <div class="top w960 center">
+      <div class="title">
+        <h1> <a href="http://miku1hhhh.github.io/mikufans.github.io//">Mikufans</a> </h1>
+      </div>
+      <!-- /title -->
+      <div class="banner"></div>
+      <!-- /banner -->
+      <div class="rlink">
+        <ul>
+          <li class="r1"><a href="http://miku1hhhh.github.io/mikufans.github.io//member">会员中心</a></li>
+          <li class="r2"><a href="http://miku1hhhh.github.io/mikufans.github.io//tags.php">TAG标签</a></li>
+          <li class="r3"><a href="http://miku1hhhh.github.io/mikufans.github.io//data/sitemap.html">网站地图</a></li>
+          <li class="r4"><a href="http://miku1hhhh.github.io/mikufans.github.io//data/rssmap.html">RSS订阅</a></li>
+        </ul>
+      </div>
+      <!-- /banner -->
+    </div>
+    <!-- /top -->
+    <div class="nav mt1">
+      <div class="w960 center">
+        <ul>
+          <li><a href="http://miku1hhhh.github.io/mikufans.github.io//">主页</a></li>
+          
+          <li><a href="http://miku1hhhh.github.io/mikufans.github.io//html/anime/index.html">动画</a></li>
+          <li><a href="http://miku1hhhh.github.io/mikufans.github.io//html/music/index.html">音乐</a></li>
+          <li><a href="http://miku1hhhh.github.io/mikufans.github.io//html/game/index.html">游戏</a></li><li class="thisclass"><a href="http://miku1hhhh.github.io/mikufans.github.io//html/ent/index.html">娱乐</a> </li>
+          <li><a href="http://miku1hhhh.github.io/mikufans.github.io//html/neta/index.html">文章</a></li>
+		  <li><a href="http://acgsola.com/" target="_blank">论坛</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- /nav -->
+    <div class="search">
+      <div class="w960 center">
+      <form action="http://miku1hhhh.github.io/mikufans.github.io//plus/search.php" name="formsearch">
+        <div class="form">
+          <h4>搜索</h4>
+           <input type="hidden" name="kwtype" value="0"/>
+           <input name="keyword" type="text" class="search-keyword" id="search-keyword"/>
+           <select name="searchtype" class="search-option" id="search-option">
+               <option value="titlekeyword" selected="1">智能模糊搜索</option>
+               <option value="title">仅搜索标题</option>
+           </select>
+          <button type="submit" class="search-submit">搜索</button>
+        </div>
+        </form>
+        <!-- /form -->
+        <div class="tags">
+          <h4>热门标签</h4>
+          <ul>
+          <li><a href="http://miku1hhhh.github.io/mikufans.github.io//tags.php?/%D0%D2%D4%CB%D0%C7/">幸运星</a></li>
+          <li><a href="http://miku1hhhh.github.io/mikufans.github.io//tags.php?/%D4%F6%D4%B1+%DD%B1%DD%B1%CD%E8/">增员 荼荼丸</a></li>
+          <li><a href="http://miku1hhhh.github.io/mikufans.github.io//tags.php?/%C1%B9%B9%AC%B4%BA%C8%D5/">凉宫春日</a></li>
+          <li><a href="http://miku1hhhh.github.io/mikufans.github.io//tags.php?/%BE%A9%B6%BC/">京都</a></li>
+          <li><a href="http://miku1hhhh.github.io/mikufans.github.io//tags.php?/%B9%AB%B8%E6/">公告</a></li>
+          <li><a href="http://miku1hhhh.github.io/mikufans.github.io//tags.php?/%D0%A1%C9%F2%D1%F4/">小沈阳</a></li>
+          <li><a href="http://miku1hhhh.github.io/mikufans.github.io//tags.php?/%BD%BB%CF%EC%CA%AB%C6%AA/">交响诗篇</a></li>
+          <li><a href="http://miku1hhhh.github.io/mikufans.github.io//tags.php?/VOCALOID/">VOCALOID</a></li>
+          
+          </ul>
+        </div>
+        <!-- /tags -->
+      </div>
+    </div>
+    <!-- /search -->
+  </div>
+<!-- /header -->
+<!-- /header -->
+<div class="w960 center clear mt1">
+<div class="dede_pages">
+				<ul class="pagelist">
+				<font size="3pt;">
+                    
+				</font>
+				</ul>
+			</div><!-- /pages -->
+</div>
+<div class="w960 center clear mt1">
+	<div width="100%" float="left" overflow="hidden">
+					<h2>Hello Acfun</h2>
+			<a href="http://miku1hhhh.github.io/mikufans.github.io//">主页</a> &gt; <a href="http://miku1hhhh.github.io/mikufans.github.io//html/ent/index.html">娱乐</a> &gt; 
+						<font size="3pt;">2009-07-14 16:00  Diablo 投稿  <small>点击:</small><script src="http://miku1hhhh.github.io/mikufans.github.io//plus/count.php?view=yes&amp;aid=91&amp;mid=364" type="text/javascript" language="javascript"></script></font><!-- /info -->
+				 <!-- /place -->
+		<div class="viewbox">
+			<div class="content">
+			　　<embed width="950" pluginspage=" http://www.adobe.com/shockwave/download/download.cgi?
+
+P1_Prod_Version=ShockwaveFlash" src="/web/20090716201240oe_/http://miku1hhhh.github.io/mikufans.github.io//html/ent/2009/0714/ http:/miku1hhhh.github.io/mikufans.github.io//PAD.swf?vid=22711837" type="application/x-
+
+shockwave-flash" allowfullscreen="true" quality="high" height="500"></embed>
+			</div><!-- /content -->
+			            	<div class="intro">Hello Acfun i want to play a game 自己制作的第一个视频，高手勿笑（内有福利。。嘘）</div>
+			<div class="newdigg" id="newdigg">
+				<div class="diggbox digg_good" onmousemove="this.style.backgroundPosition='left bottom';" onmouseout="this.style.backgroundPosition='left top';" onclick="javascript:postDigg('good',91)">
+					<div class="digg_act">顶一下</div>
+					<div class="digg_num">(11)</div>
+					<div class="digg_percent">
+						<div class="digg_percent_bar"><span style="width:91.7%"></span></div>
+						<div class="digg_percent_num">91.7%</div>
+					</div>
+				</div>
+				<div class="diggbox digg_bad" onmousemove="this.style.backgroundPosition='right bottom';" onmouseout="this.style.backgroundPosition='right top';" onclick="javascript:postDigg('bad',91)">
+					<div class="digg_act">踩一下</div>
+					<div class="digg_num">(1)</div>
+					<div class="digg_percent">
+						<div class="digg_percent_bar"><span style="width:8.3%"></span></div>
+						<div class="digg_percent_num">8.3%</div>
+					</div>
+				</div>
+			</div>
+			 <script language="javascript" type="text/javascript">getDigg(91);</script>
+			<div class="boxoff">
+				<strong>------分隔线----------------------------</strong>
+			</div>
+			<div class="handle">
+				<div class="actbox">
+					<ul>
+						<li id="act-fav"><a href="http://miku1hhhh.github.io/mikufans.github.io//plus/stow.php?aid=91" target="_blank">收藏</a></li>
+						<li id="act-err"><a href="http://miku1hhhh.github.io/mikufans.github.io//plus/erraddsave.php?aid=91&amp;title=Hello Acfun" target="_blank">挑错</a></li>
+						<li id="act-pus"><a href="http://miku1hhhh.github.io/mikufans.github.io//plus/recommend.php?aid=91" target="_blank">推荐</a></li>
+						<li id="act-pnt"><a href="#" onclick="window.print();">打印</a></li>
+					</ul>
+				</div><!-- /actbox -->
+			</div><!-- /handle -->
+		</div><!-- /viewbox -->
+
+		<div class="mt1">
+			<dl class="tbox">
+				<dt>
+					<strong>最新评论</strong>
+					<span class="more"><a href="http://miku1hhhh.github.io/mikufans.github.io//plus/feedback.php?aid=91">查看所有评论</a></span>
+				</dt>
+				<dd>				<!-- / Ajax评论 -->
+					<div class="dede_comment" id="dede_comment">
+                    <script language="javascript" type="text/javascript" src="http://miku1hhhh.github.io/mikufans.github.io//plus/feedback_js.php?aid=91"></script>
+					</div><!-- /dede_comment -->
+				</dd>
+			</dl>
+		</div><!-- /comment -->
+<div class="mt1">
+		<dl class="tbox">
+			<dt>
+				<strong>发表评论</strong>
+				<span class="more"><a href="http://miku1hhhh.github.io/mikufans.github.io//plus/feedback.php?aid=91">查看所有评论</a></span>
+			</dt>
+			<dd>
+				<div class="dede_comment_post">
+          <form action="http://miku1hhhh.github.io/mikufans.github.io//plus/feedback.php" method="post" name="feedback">
+          <input type="hidden" name="action" value="send"/>
+          <input type="hidden" name="comtype" value="comments">
+          <input type="hidden" name="aid" value="91"/>
+          <input type="hidden" name="isconfirm" value="yes"/>
+                    <div class="dcmp-title">
+						<small>请自觉遵守互联网相关的政策法规，严禁发布色情、暴力、反动的言论。</small>
+					</div><!-- /dcmp-title -->
+					<div class="dcmp-stand">
+						<strong>评价:</strong>
+							<input type="radio" name="feedbacktype" checked="1" value="feedback" id="dcmp-stand-neu"/><label for="dcmp-stand-neu"><img src="http://miku1hhhh.github.io/mikufans.github.io//templets/images/cmt-neu.gif"/>中立</label>
+							<input type="radio" name="feedbacktype" value="good" id="dcmp-stand-good"/><label for="dcmp-stand-good"><img src="http://miku1hhhh.github.io/mikufans.github.io//templets/images/cmt-good.gif"/>好评</label>
+							<input type="radio" name="feedbacktype" value="bad" id="dcmp-stand-bad"/><label for="dcmp-stand-bad"><img src="http://miku1hhhh.github.io/mikufans.github.io//templets/images/cmt-bad.gif"/>差评</label>
+					</div><!-- /dcmp-stand -->
+					<div class="dcmp-content">
+						<textarea cols="60" name="msg" rows="5" class="ipt-txt"></textarea>
+					</div><!-- /dcmp-content -->
+
+					<div class="dcmp-mood">
+						<strong>表情:</strong>
+						<ul>
+								<li><input type="radio" name="face" value="6" checked="1"/><img src="http://miku1hhhh.github.io/mikufans.github.io//templets/images/mood/ico-mood-6.gif"/></li>
+								<li><input type="radio" name="face" value="4"/><img src="http://miku1hhhh.github.io/mikufans.github.io//templets/images/mood/ico-mood-4.gif"/></li>
+								<li><input type="radio" name="face" value="3"/><img src="http://miku1hhhh.github.io/mikufans.github.io//templets/images/mood/ico-mood-3.gif"/></li>
+								<li><input type="radio" name="face" value="5"/><img src="http://miku1hhhh.github.io/mikufans.github.io//templets/images/mood/ico-mood-5.gif"/></li>
+								<li><input type="radio" name="face" value="2"/><img src="http://miku1hhhh.github.io/mikufans.github.io//templets/images/mood/ico-mood-2.gif"/></li>
+								<li><input type="radio" name="face" value="1"/><img src="http://miku1hhhh.github.io/mikufans.github.io//templets/images/mood/ico-mood-1.gif"/></li>
+								<li><input type="radio" name="face" value="7"/><img src="http://miku1hhhh.github.io/mikufans.github.io//templets/images/mood/ico-mood-7.gif"/></li>
+						</ul>
+					</div><!-- /dcmp-mood -->
+					<div class="dcmp-post"><!--未登陆-->
+							<div class="dcmp-userinfo" id="_ajax_feedback">
+								用户名:<input type="text" name="username" size="16" class="ipt-txt"/>
+								密码:<input name="pwd" type="password" size="16" class="ipt-txt"/>
+								验证码:<input type="text" name="validate" size="4" class="ipt-txt"/><img src="http://miku1hhhh.github.io/mikufans.github.io//include/vdimgck.php"/>
+                                <input type="checkbox" name="notuser" id="dcmp-submit-guest"/><label for="dcmp-submit-guest"> 匿名? </label>
+							</div>
+                             <script language="javascript" type="text/javascript">CheckLogin();</script>
+							<div class="dcmp-submit">
+								<button type="button" onclick="checkSubmit()">发表评论</button>
+							</div>
+						</div>
+                    </form>
+
+<!-- / Ajax评论 -->
+<script language="javascript" type="text/javascript">
+<!--
+comment_basehost = "";
+comment_cmspath = "";
+comment_div = "dede_comment";
+-->
+</script>
+<script language="javascript" type="text/javascript" src="http://miku1hhhh.github.io/mikufans.github.io//plus/ajax_feedback.js"></script>
+
+				</div><!-- /dede_comment_post -->
+			</dd>
+		</dl>
+	</div>
+
+	</div><!-- /pleft -->
+	</div><!-- /pright -->
+</div>
+
+<div class="footer w960 center mt1 clear">
+	<p class="powered">
+		Powered by <a href="http://miku1hhhh.github.io/mikufans.github.io//" title="mikufans" target="_blank"><strong>PADfans.cn<span> V3.3</span></strong></a> &copy; 2008-2009 <a href="http://miku1hhhh.github.io/mikufans.github.io//" target="_blank">PAD</a> Inc.	</p>
+<!-- /powered -->
+	<p class="copyright">
+		Copyright &copy; 2008-2009 PAD科技 版权所有!    <script type="text/javascript" src="http://js.tongji.linezing.com/1197658/tongji.js"></script><noscript><a href="http://www.linezing.com/">量子恒道统计!</a></noscript>
+  </p>
+</div>
+<!-- /footer -->
+
+</body>
+</html>
+<!--
+     FILE ARCHIVED ON 20:12:40 Jul 16, 2009 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 07:53:14 Nov 25, 2022.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 154.777
+  exclusion.robots: 0.264
+  exclusion.robots.policy: 0.25
+  RedisCDXSource: 0.612
+  esindex: 0.012
+  LoadShardBlock: 133.669 (3)
+  PetaboxLoader3.datanode: 138.604 (4)
+  CDXLines.iter: 17.765 (3)
+  load_resource: 112.822
+  PetaboxLoader3.resolve: 75.196
+-->
