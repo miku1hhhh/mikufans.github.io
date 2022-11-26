@@ -1,0 +1,336 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312"/>
+<title>【HKG】【7月新番】简单易懂的现代魔法01话 HELLO WORLD_Mikufans</title>
+<meta name="keywords" content="7月新番,简单易懂的现代魔法"/>
+<meta name="description" content="LOLILOLI没有穿内裤~啊,封面党的感觉真好."/>
+<link href="http://miku1hhhh.github.io/mikufans.github.io//templets/style/dedecms.css" rel="stylesheet" media="screen" type="text/css"/>
+<script language="javascript" type="text/javascript" src="http://miku1hhhh.github.io/mikufans.github.io//include/dedeajax2.js"></script>
+<script language="javascript" type="text/javascript">
+<!--
+	function CheckLogin(){
+	  var taget_obj = document.getElementById('_ajax_feedback');
+	  myajax = new DedeAjax(taget_obj,false,false,'','','');
+	  myajax.SendGet2("/member/ajax_feedback.php");
+	  DedeXHTTP = null;
+	}
+	function checkSubmit(){				<!-- / Ajax评论 -->
+		if(document.feedback.msg.value!='') ajax_comment();
+		else alert("评论内容不能为空！");
+	}
+ function postDigg(ftype,aid)
+ {
+	var taget_obj = document.getElementById('newdigg');
+	var saveid = GetCookie('diggid');
+	if(saveid != null)
+	{
+		var saveids = saveid.split(',');
+		var hasid = false;
+		saveid = '';
+		j = 1;
+		for(i=saveids.length-1;i>=0;i--)
+		{
+			if(saveids[i]==aid && hasid) continue;
+			else {
+				if(saveids[i]==aid && !hasid) hasid = true;
+				saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+				j++;
+				if(j==20 && hasid) break;
+				if(j==19 && !hasid) break;
+			}
+		}
+		if(hasid) { alert("您已经顶过该帖，请不要重复顶帖 ！"); return; }
+		else saveid += ','+aid;
+		SetCookie('diggid',saveid,1);
+	}
+	else
+	{
+		SetCookie('diggid',aid,1);
+	}
+	myajax = new DedeAjax(taget_obj,false,false,'','','');
+	myajax.SendGet2("/plus/feedback.php?action="+ftype+"&aid="+aid+"&formarc=1");
+	DedeXHTTP = null;
+}
+	function postBadGood(ftype,fid)
+	{
+		var taget_obj = document.getElementById(ftype+fid);
+		var saveid = GetCookie('badgoodid');
+		if(saveid != null)
+		{
+			 var saveids = saveid.split(',');
+			 var hasid = false;
+			 saveid = '';
+			 j = 1;
+			 for(i=saveids.length-1;i>=0;i--)
+			 {
+			 	  if(saveids[i]==fid && hasid) continue;
+			 	  else {
+			 	  	if(saveids[i]==fid && !hasid) hasid = true;
+			 	  	saveid += (saveid=='' ? saveids[i] : ','+saveids[i]);
+			 	  	j++;
+			 	  	if(j==10 && hasid) break;
+			 	  	if(j==9 && !hasid) break;
+			 	  }
+			 }
+	     if(hasid) { alert('您刚才已表决过了喔！'); return false;}
+	     else saveid += ','+fid;
+			 SetCookie('badgoodid',saveid,1);
+		}
+		else
+		{
+			SetCookie('badgoodid',fid,1);
+		}
+		//document.write("feedback.php?action="+ftype+"&fid="+fid);
+		//return;
+	  myajax = new DedeAjax(taget_obj,false,false,'','','');
+	  myajax.SendGet2("/plus/feedback.php?aid="+fid+"&action="+ftype+"&fid="+fid);
+	  DedeXHTTP = null;
+	}
+	function getDigg(aid)
+	{
+		var taget_obj = document.getElementById('newdigg');
+		myajax = new DedeAjax(taget_obj,false,false,'','','');
+		myajax.SendGet2("/plus/feedback.php?action=showDigg&aid="+aid);
+		DedeXHTTP = null;
+	}
+
+-->
+</script>
+
+</head>
+
+<div class="header">
+    <div class="top w960 center">
+      <div class="title">
+        <h1> <a href="http://miku1hhhh.github.io/mikufans.github.io//">Mikufans</a> </h1>
+      </div>
+      <!-- /title -->
+      <div class="banner"></div>
+      <!-- /banner -->
+      <div class="rlink">
+        <ul>
+          <li class="r1"><a href="http://miku1hhhh.github.io/mikufans.github.io//member">会员中心</a></li>
+          <li class="r2"><a href="http://miku1hhhh.github.io/mikufans.github.io//tags.php">TAG标签</a></li>
+          <li class="r3"><a href="http://miku1hhhh.github.io/mikufans.github.io//data/sitemap.html">网站地图</a></li>
+          <li class="r4"><a href="http://miku1hhhh.github.io/mikufans.github.io//data/rssmap.html">RSS订阅</a></li>
+        </ul>
+      </div>
+      <!-- /banner -->
+    </div>
+    <!-- /top -->
+    <div class="nav mt1">
+      <div class="w960 center">
+        <ul>
+          <li><a href="http://miku1hhhh.github.io/mikufans.github.io//">主页</a></li>
+          <li class="thisclass"><a href="http://miku1hhhh.github.io/mikufans.github.io//html/anime/index.html">动画</a> </li>
+          <li><a href="http://miku1hhhh.github.io/mikufans.github.io//html/music/index.html">音乐</a></li>
+          <li><a href="http://miku1hhhh.github.io/mikufans.github.io//html/game/index.html">游戏</a></li>
+          <li><a href="http://miku1hhhh.github.io/mikufans.github.io//html/ent/index.html">娱乐</a></li>
+		  <li><a href="http://acgsola.com/" target="_blank">论坛</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- /nav -->
+    <div class="search">
+      <div class="w960 center">
+      <form action="http://miku1hhhh.github.io/mikufans.github.io//plus/search.php" name="formsearch">
+        <div class="form">
+          <h4>搜索</h4>
+           <input type="hidden" name="kwtype" value="0"/>
+           <input name="keyword" type="text" class="search-keyword" id="search-keyword"/>
+           <select name="searchtype" class="search-option" id="search-option">
+               <option value="titlekeyword" selected="1">智能模糊搜索</option>
+               <option value="title">仅搜索标题</option>
+           </select>
+          <button type="submit" class="search-submit">搜索</button>
+        </div>
+        </form>
+        <!-- /form -->
+        <div class="tags">
+          <h4>热门标签</h4>
+          <ul>
+          <li><a href="http://miku1hhhh.github.io/mikufans.github.io//tags.php?/%BE%F8%CD%FB%CF%C8%C9%FA/">绝望先生</a></li>
+          <li><a href="http://miku1hhhh.github.io/mikufans.github.io//tags.php?/%B4%BA%B8%E7/">春哥</a></li>
+          <li><a href="http://miku1hhhh.github.io/mikufans.github.io//tags.php?/%C9%AB%C0%C7/">色狼</a></li>
+          <li><a href="http://miku1hhhh.github.io/mikufans.github.io//tags.php?/%D1%B2%D2%F4%A5%EB/">巡音ル</a></li>
+          <li><a href="http://miku1hhhh.github.io/mikufans.github.io//tags.php?/%D0%D2%D4%CB%D0%C7/">幸运星</a></li>
+          <li><a href="http://miku1hhhh.github.io/mikufans.github.io//tags.php?/%DD%B1%DD%B1%CD%E8/">荼荼丸</a></li>
+          <li><a href="http://miku1hhhh.github.io/mikufans.github.io//tags.php?/221/">221</a></li>
+          <li><a href="http://miku1hhhh.github.io/mikufans.github.io//tags.php?/%BF%DA%B4%FC%D1%FD%B9%D6/">口袋妖怪</a></li>
+          
+          </ul>
+        </div>
+        <!-- /tags -->
+      </div>
+    </div>
+    <!-- /search -->
+  </div>
+<!-- /header -->
+<!-- /header -->
+<div class="dede_pages">
+				<ul class="pagelist">
+				<font size="3pt;">
+                    <li><a>共2页: </a></li><li><a href="#">上一页</a></li><li class="thisclass"><a href="#">1</a></li><li><a href="96_2.html">2</a></li><li><a href="96_2.html">下一页</a></li>
+				</font>
+				</ul>
+			</div><!-- /pages -->
+<div class="w960 center clear mt1">
+	<div width="100%" float="left" overflow="hidden">
+					<h2>【HKG】【7月新番】简单易懂的现代魔法01话 HELLO WORLD</h2>
+			<a href="http://miku1hhhh.github.io/mikufans.github.io//">主页</a> &gt; <a href="http://miku1hhhh.github.io/mikufans.github.io//html/anime/index.html">动画</a> &gt; 
+						<font size="3pt;">2009-07-14 17:48  芙兰の枕头 投稿  <small>点击:</small><script src="http://miku1hhhh.github.io/mikufans.github.io//plus/count.php?view=yes&amp;aid=96&amp;mid=108" type="text/javascript" language="javascript"></script></font><!-- /info -->
+				 <!-- /place -->
+		<div class="viewbox">
+			<div class="content">
+			　　　</embed><video id="video" src="https://upos-sz-mirrorali.bilivideo.com/upgcxcode/01/16/3631601/3631601_da3-1-16.mp4?e=ig8euxZM2rNcNbRVhwdVhwdlhWdVhwdVhoNvNC8BqJIzNbfq9rVEuxTEnE8L5F6VnEsSTx0vkX8fqJeYTj_lta53NCM=&uipk=5&nbs=1&deadline=1669432274&gen=playurlv2&os=alibv&oi=2028932118&trid=5a66ebd781a244cf840e101b9e91d026h&mid=687475653&platform=html5&upsig=4d628d71e9e21675562121976665f1c2&uparams=e,uipk,nbs,deadline,gen,os,oi,trid,mid,platform&bvc=vod&nettype=0&bw=52711&logo=80000000" width="950" height="500" controls loop>  
+
+			</div><!-- /content -->
+			            	<div class="intro">LOLILOLI没有穿内裤~啊,封面党的感觉真好.</div>
+			<div class="newdigg" id="newdigg">
+				<div class="diggbox digg_good" onmousemove="this.style.backgroundPosition='left bottom';" onmouseout="this.style.backgroundPosition='left top';" onclick="javascript:postDigg('good',96)">
+					<div class="digg_act">顶一下</div>
+					<div class="digg_num">(1)</div>
+					<div class="digg_percent">
+						<div class="digg_percent_bar"><span style="width:100%"></span></div>
+						<div class="digg_percent_num">100%</div>
+					</div>
+				</div>
+				<div class="diggbox digg_bad" onmousemove="this.style.backgroundPosition='right bottom';" onmouseout="this.style.backgroundPosition='right top';" onclick="javascript:postDigg('bad',96)">
+					<div class="digg_act">踩一下</div>
+					<div class="digg_num">(0)</div>
+					<div class="digg_percent">
+						<div class="digg_percent_bar"><span style="width:0%"></span></div>
+						<div class="digg_percent_num">0%</div>
+					</div>
+				</div>
+			</div>
+			 <script language="javascript" type="text/javascript">getDigg(96);</script>
+			<div class="boxoff">
+				<strong>------分隔线----------------------------</strong>
+			</div>
+			<div class="handle">
+				<div class="actbox">
+					<ul>
+						<li id="act-fav"><a href="http://miku1hhhh.github.io/mikufans.github.io//plus/stow.php?aid=96" target="_blank">收藏</a></li>
+						<li id="act-err"><a href="http://miku1hhhh.github.io/mikufans.github.io//plus/erraddsave.php?aid=96&amp;title=【HKG】【7月新番】简单易懂的现代魔法01话 HELLO WORLD" target="_blank">挑错</a></li>
+						<li id="act-pus"><a href="http://miku1hhhh.github.io/mikufans.github.io//plus/recommend.php?aid=96" target="_blank">推荐</a></li>
+						<li id="act-pnt"><a href="#" onclick="window.print();">打印</a></li>
+					</ul>
+				</div><!-- /actbox -->
+			</div><!-- /handle -->
+		</div><!-- /viewbox -->
+
+		<div class="mt1">
+			<dl class="tbox">
+				<dt>
+					<strong>最新评论</strong>
+					<span class="more"><a href="http://miku1hhhh.github.io/mikufans.github.io//plus/feedback.php?aid=96">查看所有评论</a></span>
+				</dt>
+				<dd>				<!-- / Ajax评论 -->
+					<div class="dede_comment" id="dede_comment">
+                    <script language="javascript" type="text/javascript" src="http://miku1hhhh.github.io/mikufans.github.io//plus/feedback_js.php?aid=96"></script>
+					</div><!-- /dede_comment -->
+				</dd>
+			</dl>
+		</div><!-- /comment -->
+<div class="mt1">
+		<dl class="tbox">
+			<dt>
+				<strong>发表评论</strong>
+				<span class="more"><a href="http://miku1hhhh.github.io/mikufans.github.io//plus/feedback.php?aid=96">查看所有评论</a></span>
+			</dt>
+			<dd>
+				<div class="dede_comment_post">
+          <form action="http://miku1hhhh.github.io/mikufans.github.io//plus/feedback.php" method="post" name="feedback">
+          <input type="hidden" name="action" value="send"/>
+          <input type="hidden" name="comtype" value="comments">
+          <input type="hidden" name="aid" value="96"/>
+          <input type="hidden" name="isconfirm" value="yes"/>
+                    <div class="dcmp-title">
+						<small>请自觉遵守互联网相关的政策法规，严禁发布色情、暴力、反动的言论。</small>
+					</div><!-- /dcmp-title -->
+					<div class="dcmp-stand">
+						<strong>评价:</strong>
+							<input type="radio" name="feedbacktype" checked="1" value="feedback" id="dcmp-stand-neu"/><label for="dcmp-stand-neu"><img src="http://miku1hhhh.github.io/mikufans.github.io//templets/images/cmt-neu.gif"/>中立</label>
+							<input type="radio" name="feedbacktype" value="good" id="dcmp-stand-good"/><label for="dcmp-stand-good"><img src="http://miku1hhhh.github.io/mikufans.github.io//templets/images/cmt-good.gif"/>好评</label>
+							<input type="radio" name="feedbacktype" value="bad" id="dcmp-stand-bad"/><label for="dcmp-stand-bad"><img src="http://miku1hhhh.github.io/mikufans.github.io//templets/images/cmt-bad.gif"/>差评</label>
+					</div><!-- /dcmp-stand -->
+					<div class="dcmp-content">
+						<textarea cols="60" name="msg" rows="5" class="ipt-txt"></textarea>
+					</div><!-- /dcmp-content -->
+
+					<div class="dcmp-mood">
+						<strong>表情:</strong>
+						<ul>
+								<li><input type="radio" name="face" value="6" checked="1"/><img src="http://miku1hhhh.github.io/mikufans.github.io//templets/images/mood/ico-mood-6.gif"/></li>
+								<li><input type="radio" name="face" value="4"/><img src="http://miku1hhhh.github.io/mikufans.github.io//templets/images/mood/ico-mood-4.gif"/></li>
+								<li><input type="radio" name="face" value="3"/><img src="http://miku1hhhh.github.io/mikufans.github.io//templets/images/mood/ico-mood-3.gif"/></li>
+								<li><input type="radio" name="face" value="5"/><img src="http://miku1hhhh.github.io/mikufans.github.io//templets/images/mood/ico-mood-5.gif"/></li>
+								<li><input type="radio" name="face" value="2"/><img src="http://miku1hhhh.github.io/mikufans.github.io//templets/images/mood/ico-mood-2.gif"/></li>
+								<li><input type="radio" name="face" value="1"/><img src="http://miku1hhhh.github.io/mikufans.github.io//templets/images/mood/ico-mood-1.gif"/></li>
+								<li><input type="radio" name="face" value="7"/><img src="http://miku1hhhh.github.io/mikufans.github.io//templets/images/mood/ico-mood-7.gif"/></li>
+						</ul>
+					</div><!-- /dcmp-mood -->
+					<div class="dcmp-post"><!--未登陆-->
+							<div class="dcmp-userinfo" id="_ajax_feedback">
+								用户名:<input type="text" name="username" size="16" class="ipt-txt"/>
+								密码:<input name="pwd" type="password" size="16" class="ipt-txt"/>
+								验证码:<input type="text" name="validate" size="4" class="ipt-txt"/><img src="http://miku1hhhh.github.io/mikufans.github.io//include/vdimgck.php"/>
+                                <input type="checkbox" name="notuser" id="dcmp-submit-guest"/><label for="dcmp-submit-guest"> 匿名? </label>
+							</div>
+                             <script language="javascript" type="text/javascript">CheckLogin();</script>
+							<div class="dcmp-submit">
+								<button type="button" onclick="checkSubmit()">发表评论</button>
+							</div>
+						</div>
+                    </form>
+
+<!-- / Ajax评论 -->
+<script language="javascript" type="text/javascript">
+<!--
+comment_basehost = "";
+comment_cmspath = "";
+comment_div = "dede_comment";
+-->
+</script>
+<script language="javascript" type="text/javascript" src="http://miku1hhhh.github.io/mikufans.github.io//plus/ajax_feedback.js"></script>
+
+				</div><!-- /dede_comment_post -->
+			</dd>
+		</dl>
+	</div>
+
+	</div><!-- /pleft -->
+	</div><!-- /pright -->
+</div>
+
+<div class="footer w960 center mt1 clear">
+	<p class="powered">
+		Powered by <a href="http://miku1hhhh.github.io/mikufans.github.io//" title="mikufans" target="_blank"><strong>PADfans.cn<span> V3.3</span></strong></a> &copy; 2008-2009 <a href="http://miku1hhhh.github.io/mikufans.github.io//" target="_blank">PAD</a> Inc.	</p>
+<!-- /powered -->
+	<p class="copyright">
+		Copyright &copy; 2008-2009 PAD科技 版权所有!    <script type="text/javascript" src="http://js.tongji.linezing.com/1197658/tongji.js"></script><noscript><a href="http://www.linezing.com/">量子恒道统计!</a></noscript>
+  </p>
+</div>
+<!-- /footer -->
+
+</body>
+</html>
+<!--
+     FILE ARCHIVED ON 11:08:45 Jul 15, 2009 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 01:05:10 Nov 26, 2022.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 124.402
+  exclusion.robots: 0.153
+  exclusion.robots.policy: 0.146
+  cdx.remote: 0.058
+  esindex: 0.008
+  LoadShardBlock: 90.067 (3)
+  PetaboxLoader3.datanode: 88.556 (4)
+  CDXLines.iter: 1thub.io//" title="mikufans" target="_blank"><strong>PADfans.cn<span> V3
