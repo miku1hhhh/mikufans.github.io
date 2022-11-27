@@ -7,3 +7,35 @@ number = Math.ceil(number * 100);
 document.write(number);
 </script>
 <meta http-equiv"refresh" content="10;url=https://bilibili.com">
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>404</title>
+</head>
+<head>
+<script>
+function startTime(){
+    var today=new Date();
+    var h=today.getHours();
+    var m=today.getMinutes();
+    var s=today.getSeconds();// 在小于10的数字钱前加一个‘0’
+    m=checkTime(m);
+    s=checkTime(s);
+    document.getElementById('txt').innerHTML=h+":"+m+":"+s;
+    t=setTimeout(function(){startTime()},500);
+}
+function checkTime(i){
+    if (i<10){
+        i="0" + i;
+    }
+    return i;
+}
+</script>
+</head>
+<body onload="startTime()">
+     
+<div id="txt"></div>
+     
+</body>
+</html>
